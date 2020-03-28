@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Flat from '../components/flat';
 
 class FlatList extends Component {
   static defaultProps = {
@@ -13,10 +14,13 @@ class FlatList extends Component {
   render() {
     return (
       <div className="flat-list col-sm-7">
-        TODO Flat List
+        {this.props.flats.map((flat) => {
+          return <Flat key={flat.name} flat={flat} />;
+        })}
       </div>
     );
   }
 }
 
 export default FlatList;
+
