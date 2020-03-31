@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './stylesheets/index.scss';
-import App from './App';
+import App from './components/app';
 import store from './app/store';
 import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
-import flatsReducer from './reducers/flats_reducer';
+// import flatsReducer from './reducers/flats_reducer';
 import * as serviceWorker from './serviceWorker';
 
 const reducers = combineReducers({
-  flats: flatsReducer
+  // flats: flatsReducer
 });
 
 ReactDOM.render(
