@@ -4,12 +4,12 @@ import Map from '../containers/map';
 
 class App extends Component {
   render () {
-    return {
+    return (
       <div className="row">
         <FlatList />
         <Map />
       </div>
-    }
+    );
   }
 }
 
