@@ -12,12 +12,8 @@ const reducers = combineReducers({
   // flats: flatsReducer
 });
 
-ReactDOM.render(
-  <Provider store={createStore(reducers)}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
-);
+const root = document.getElementById('root');
+ReactDOM.render(<App />, root);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
