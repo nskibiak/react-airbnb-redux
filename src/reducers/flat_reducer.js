@@ -3,7 +3,19 @@ const flatsReducer = (state, action) => {
     return [];
   }
 
-  // TODO: handle some actions
+  if (action.type === 'SET_FLATS') {
+    return action.payload;
+  } else {
+    return state;
+  }
+
+  // USUAL WAY OF HANDLING ACTION
+  // switch(action.type) {
+  //   case 'SET_FLATS':
+  //     return action.payload;
+  //   default:
+  //     return state;
+  // }
 }
 
 export default flatsReducer;
