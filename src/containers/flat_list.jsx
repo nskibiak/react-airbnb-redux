@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Flat from '../components/flat';
+import Flat from '../containers/flat';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { setFlats } from '../actions'

@@ -3,7 +3,11 @@ const selectedFlatReducer = (state, action) => {
     return null;
   }
 
-
+  if (action.type === 'SELECT_FLAT') {
+    return action.payload;
+  } else {
+    return state;
+  }
   // USUAL WAY OF HANDLING ACTION
   // switch(action.type) {
   //   case 'SET_FLATS':
