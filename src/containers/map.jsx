@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 
+require('dotenv').config({ path: '../..' })
+
 class Map extends Component {
   render() {
     let marker = null;
     let center = { lat: 48.856614, lng: 2.352222 };
 
     return (
-      <div style={{ height: '100vh', width: '100%' }}>
+      <div style={{ height: '100vh', width: '40vw' }}>
         <GoogleMapReact
-          // bootstrapURLKeys={{ key: process.env.REACT_APP_MAP_API }}
+          bootstrapURLKeys={{ key: process.env.REACT_APP_MAP_API }}
           defaultCenter={center}
           defaultZoom={15}
         >
@@ -22,4 +24,4 @@ class Map extends Component {
 
 export default Map;
 
-// require('dotenv').config({ path: '../..' })
+
