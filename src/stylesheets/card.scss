@@ -12,13 +12,6 @@
     box-shadow:0px 0px 0px 10px red inset;;
   }
 }
-.card-user {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 40px;
-  border-radius: 50%;
-}
 .card-category {
   position: absolute;
   top: 10px;
@@ -39,21 +32,8 @@
   opacity: 0.7;
   font-weight: lighter;
 }
-.card-link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  z-index: 2;
-  background: black;
-  opacity: 0;
+.card:hover {
+  opacity: 0.9;
 }
-.card-link:hover {
-  opacity: 0.1;
-}
-// .card:hover {
-//   opacity: 0.9;
-// }
 
 
