@@ -6,17 +6,10 @@ import { setFlats } from '../actions'
 
 
 class FlatList extends Component {
-  static defaultProps = {
-    flats: [{
-      'name': 'Charm at the Steps of Montmartre',
-      'imageUrl': 'https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/images/flat1.jpg',
-      'price': 164,
-      'priceCurrency': 'EUR'
-    }]
-  }
 
   componentWillMount() {
    // TODO: dispatch an action to load flats!
+   this.props.setFlats();
   }
 
   render() {
@@ -30,6 +23,12 @@ class FlatList extends Component {
   }
 }
 
+function mapReduxStateToProps(state) {
+  return {
+    flats: state.flats
+  }
+}
+
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     { setFlats: setFlats},
@@ -37,5 +36,5 @@ function mapDispatchToProps(dispatch) {
   );
 }
 
-export default connect(null, mapDispatchToProps)(FlatList);
+export default connect(mapReduxStateToProps, mapDispatchToProps)(FlatList);
 
