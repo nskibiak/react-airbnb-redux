@@ -7,12 +7,10 @@ class Map extends Component {
   render() {
     let marker = null;
     let center = { lat: 48.856614, lng: 2.352222 };
-    let key = 'AIzaSyB3W_l9SMvHl6iBmpDiaOnWgXREzcMtJuI';
 
     return (
       <div style={{ height: '100vh', width: '40vw' }}>
         <GoogleMapReact
-          // bootstrapURLKeys={{ key: key }}
           bootstrapURLKeys={{ key: process.env.REACT_APP_MAP_API }}
           defaultCenter={center}
           defaultZoom={15}
