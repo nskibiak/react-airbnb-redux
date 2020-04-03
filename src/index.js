@@ -7,7 +7,7 @@ import './stylesheets/index.scss';
 
 // import store from './app/store';
 // import * as serviceWorker from './serviceWorker';
-import flatsReducer from './reducers/flats_reducer';
+import flatsReducer from './reducers/flat_reducer';
 
 import App from './components/app';
 
