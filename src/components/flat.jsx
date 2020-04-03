@@ -7,11 +7,9 @@ const style = {
 };
 
   return (
-    <div className="flat card-container">
-      <div className="card" style={style}>
-        <h2>{props.flat.name}</h2>
-        <p>{props.flat.price} {props.flat.priceCurrency}</p>
-      </div>
+    <div className="card" style={style}>
+      <div className="card-description"><h2>{props.flat.name}</h2></div>
+      <div className="card-category">{props.flat.price} {props.flat.priceCurrency}</div>
     </div>
   );
 };
