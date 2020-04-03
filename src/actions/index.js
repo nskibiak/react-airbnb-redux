@@ -1,4 +1,4 @@
-import flats from '../flats';
+import flats from '../data/flats';
 
 export function setFlats() {
   // TODO: Api call! for now, simulate a DB
