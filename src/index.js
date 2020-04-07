@@ -19,7 +19,7 @@ const reducers = combineReducers({
   selectedFlat: selectedFlatReducer
 });
 
-const middlewares = applyMiddleware(reduxPromise, logger);
+const middlewares = applyMiddleware(logger, reduxPromise);
 
 const root = document.getElementById('root');
 ReactDOM.render(
