@@ -1,9 +1,11 @@
+import { SELECT_FLATS } from '../actions';
+
 const selectedFlatReducer = (state, action) => {
   if (state === undefined) {
     return null;
   }
 
-  if (action.type === 'SELECT_FLAT') {
+  if (action.type === SELECT_FLATS) {
     return action.payload;
   } else {
     return state;

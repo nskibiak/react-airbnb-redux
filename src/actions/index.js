@@ -11,6 +11,7 @@
 // }
 
 export const SET_FLATS = 'SET_FLATS';
+export const SELECT_FLATS = 'SELECT_FLATS';
 
 export function setFlats() {
   const promise = fetch('https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/flats.json')
@@ -24,7 +25,7 @@ export function setFlats() {
 
 export function selectFlat(flat) {
   return {
-    type: 'SELECT_FLAT',
+    type: SELECT_FLATS,
     payload: flat
   }
 }
